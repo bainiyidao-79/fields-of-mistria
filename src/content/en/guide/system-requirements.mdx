@@ -1,0 +1,48 @@
+---
+title: "Fields of Mistria System Requirements for PC and Linux"
+description: "Fields of Mistria needs a 64-bit PC with a 6 GB RAM minimum, GTX 460-class GPU, and 2 GB storage. Official Windows, Linux, and Steam Deck specs."
+date: "2026-09-09"
+updated: "2026-09-09"
+category: "guide"
+keywords: ["fields of mistria system requirements", "fields of mistria requirements", "can my pc run fields of mistria"]
+readTime: "3 min read"
+---
+
+Fields of Mistria is a very lightweight game: Steam's official system requirements ask for a 64-bit Windows 10 machine with **6 GB of RAM, a GTX 460 (1 GB) or Radeon R7 240 (1 GB) class GPU, DirectX 11, and just 2 GB of storage**. This is a small pixel-art farming sim, far below any AAA bar — if your PC can run games from the last decade at all, you're at or above the floor.
+
+## Official Windows Requirements (Steam)
+
+| Component | Minimum | Recommended |
+| --- | --- | --- |
+| OS | Windows 10 (64-bit) | Windows 10 (64-bit) |
+| Processor | Intel Core2 Duo E6400 or AMD Phenom X2 Dual-Core GP-7730 | AMD Ryzen 3 3300X |
+| Memory | 6 GB RAM | 8 GB RAM |
+| Graphics | NVIDIA GeForce GTX 460 1GB or AMD Radeon R7 240 1GB | AMD RX 480 8GB |
+| DirectX | Version 11 | Version 11 |
+| Storage | 2 GB available space | 2 GB available space |
+
+## Linux and SteamOS Requirements
+
+Steam publishes a separate SteamOS + Linux listing. The hardware line matches Windows; note that the store page contains a units typo in the Linux block (it prints "6 MB RAM / 2 MB storage" where gigabytes are clearly intended):
+
+| Component | Minimum | Recommended |
+| --- | --- | --- |
+| OS | Ubuntu LTS with Unity, GNOME, or KDE | Ubuntu LTS with Unity, GNOME, or KDE |
+| Processor | Intel Core2 Duo E6400 or AMD Phenom X2 Dual-Core GP-7730 | AMD Ryzen 3 3300X |
+| Graphics | NVIDIA GeForce GTX 460 1GB or AMD Radeon R7 240 1GB | AMD RX 480 8GB |
+| Memory / Storage | 6 GB RAM / 2 GB space (per store page, units typo'd as "MB") | 8 GB RAM / 2 GB space |
+
+A native Linux depot exists on Steam (64-bit), so Linux players aren't relying on Proton translation. macOS support is murkier: SteamDB detects a macOS 64-bit depot with no size data and the store page lists no Mac requirements — treat Mac play as (to be confirmed).
+
+## What the Numbers Mean in Practice
+
+The minimum GPU is a **2010-era card** — the GTX 460 launched over 15 years ago — and the recommended Ryzen 3 3300X is a budget 2020 quad-core. Between them the game asks for essentially nothing modern. Storage is the easiest part of any install today: the actual Windows depot downloads about **305 MB and occupies roughly 615 MB on disk** (SteamDB), and the build uses FMOD and SDL, technologies famous for wide hardware compatibility.
+
+Modern integrated graphics (Intel Iris Xe / AMD Radeon 600M-series and newer) have no trouble clearing a GTX 460 bar, though NPC Studio doesn't officially document iGPU tiers, so that's an inference rather than a spec (to be confirmed). Full controller support is flagged in the game's Steam metadata, and if your PC genuinely falls under the minimums, the Steam Deck (Verified) or streaming from another machine remain options.
+
+## Quick Answers
+
+- **How much space does Fields of Mistria take?** Official requirement: 2 GB free. Real-world install: under 1 GB (~615 MB).
+- **Does it need a gaming GPU?** No — a 2010 entry-level 1 GB card is the stated floor, and Valve's Deck verification found the default graphics configuration performs well on the handheld's built-in APU.
+- **Windows 11?** Requirements state Windows 10; Windows 11 runs everything Windows 10 does — (to be confirmed, not officially listed).
+- **Where is the game sold?** Only Steam for now: [store.steampowered.com/app/2142790](https://store.steampowered.com/app/2142790/).
