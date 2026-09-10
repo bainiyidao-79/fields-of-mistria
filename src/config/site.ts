@@ -79,8 +79,8 @@ export const siteConfig: SiteConfig = {
   primaryCtaHref: "/intro/what-is-fields-of-mistria",
 
   ads: {
-    sidebar: `<script async="async" data-cfasync="false" src="https://pl31036462.profitableratecpmnetwork.com/451eb73e616cf113813a1a0246327f1c/invoke.js"></script> <div id="container-451eb73e616cf113813a1a0246327f1c"></div>`,
-    footerBanner: `<script> atOptions = { 'key' : '0956a07eeaa1b83c5493388661a88e44', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} }; </script> <script src="https://www.highrevenueformat.com/0956a07eeaa1b83c5493388661a88e44/invoke.js"></script>`,
+    sidebar: `<script async="async" data-cfasync="false" src="https://pl31264211.profitableratecpmnetwork.com/b78e9d2c50036624202ddada3421c894/invoke.js"></script> <div id="container-b78e9d2c50036624202ddada3421c894"></div>`,
+    footerBanner: `<script> atOptions = { 'key' : '41b5ba7282d0c836afa81485d56b6a49', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} }; </script> <script src="https://www.highrevenueformat.com/41b5ba7282d0c836afa81485d56b6a49/invoke.js"></script>`,
   },
   platformUrl: "https://store.steampowered.com/app/2142790/Fields_of_Mistria/",
   keywords: ["fields of mistria", "fields of mistria wiki", "fields of mistria release date", "fields of mistria guide", "fields of mistria relationships"],
