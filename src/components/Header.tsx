@@ -10,14 +10,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-sm">
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4">
-        <div className="flex items-center gap-2.5">
-          <Link href="/" className="flex items-baseline gap-2">
-            <span className="text-lg font-bold tracking-tight text-foreground">
-              {siteConfig.shortName}
+      <div className="mx-auto flex min-h-14 max-w-7xl items-center justify-between gap-3 px-4 py-1.5">
+        <div className="flex min-w-0 items-center gap-2.5">
+          <Link href="/" className="flex min-w-0 items-center gap-2">
+            <span className="text-base font-bold leading-tight tracking-tight text-foreground sm:text-lg">
+              {siteConfig.name}
             </span>
             {siteConfig.eyebrow && (
-              <span className="hidden text-[9px] font-semibold uppercase tracking-[0.25em] text-primary sm:inline">
+              <span className="hidden text-[9px] font-semibold uppercase tracking-[0.25em] text-primary lg:inline">
                 {siteConfig.eyebrow}
               </span>
             )}
