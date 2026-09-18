@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { marked } from "marked";
-import { siteUrl } from "@/config/site";
+import { siteConfig, siteUrl } from "@/config/site";
 import { ArticleView } from "@/components/ArticleView";
 import {
   getArticle,
@@ -16,7 +16,14 @@ export async function generateMetadata({
   params: Promise<{ section: string; slug: string }>;
 }): Promise<Metadata> {
   const { section, slug } = await params;
-  return { alternates: { canonical: `${siteUrl}/${section}/${slug}` } };
+  const canonical = `${siteUrl}/${section}/${slug}`;
+  const article = getArticle(section, slug);
+  if (!article) return { alternates: { canonical } };
+  return {
+    title: `${article.meta.title} | ${siteConfig.name}`,
+    description: article.meta.description,
+    alternates: { canonical },
+  };
 }
 
 // 内容页 L3：左正文 + 右黏性栏（图文混排 MDX → markdown 渲染）
