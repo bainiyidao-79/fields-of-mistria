@@ -1,23 +1,16 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { SectionView } from "@/components/SectionView";
-import { siteConfig } from "@/config/site";
 import { listArticles, listSections, getSectionLabel } from "@/lib/content";
+import { siteUrl } from "@/config/site";
 
-// 栏目页独立 SEO 标题
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ section: string }>;
 }): Promise<Metadata> {
   const { section } = await params;
-  const validSections = listSections();
-  if (!validSections.includes(section)) return {};
-  return {
-    title: `${getSectionLabel(section)} — ${siteConfig.name} Wiki`,
-    description:
-      siteConfig.sectionIntros?.[section] ?? siteConfig.seo.description,
-  };
+  return { alternates: { canonical: `${siteUrl}/${section}` } };
 }
 
 // 栏目页 L2：该栏目攻略按钮列表（内容自动跟随 content 目录）
